@@ -2,7 +2,9 @@
 
 //Get a random integer from 0 to n inclusive;
 //n is the number of times the loop will run
+
 // const number = Math.ceil(Math.random() * n);
+//The Math.ceil() function is used to get the smallest integer greater than or equal to a given number.
 
 function isMatched(gnum){
 // Get a random integer from 1 to 10 inclusive
