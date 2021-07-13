@@ -9,7 +9,20 @@
 
 //Solution1:
 
+
 var year = 2012;
+
+if (leapyear(year))
+{
+    console.log(year + " is a leap year");
+}
+else
+{
+    console.log(year + " is not a leap year");
+}
+ 
+// Output: 2012 is a leap year
+
 
 if (year % 4 == 0) {
     if (year % 100 == 0 && year % 400 != 0) {
@@ -41,10 +54,3 @@ true
 false
 false
 false */
-
-
-
-
-
-
-
