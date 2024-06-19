@@ -18,10 +18,3 @@ let newPromise = new Promise((resolve,reject) => {
 newPromise.then((data) => console.log(data))
 newPromise.catch((error) => console.log(error))
 
-const cart = ['shoes','jeans','mobiles'];
-
-createOrder(cart); //orderId
-
-function proceedToPayment(orderId){
-
-}

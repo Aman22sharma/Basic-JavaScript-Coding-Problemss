@@ -12,12 +12,9 @@
 
 var year = 2012;
 
-if (leapyear(year))
-{
+if (leapyear(year)){
     console.log(year + " is a leap year");
-}
-else
-{
+}else{
     console.log(year + " is not a leap year");
 }
  
@@ -38,9 +35,8 @@ if (year % 4 == 0) {
 
 //Solution 2:
 
-function leapyear(year)
-{
-return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
+function leapyear(year){
+    return (year % 100 === 0) ? (year % 400 === 0) : (year % 4 === 0);
 }
 console.log(leapyear(1996));
 console.log(leapyear(2000));

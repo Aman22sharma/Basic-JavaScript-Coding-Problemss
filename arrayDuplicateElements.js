@@ -24,3 +24,24 @@ function findOccurrence(arr){
 }
 
 console.log(findOccurrence(input1Arr)) // Output : { '1': 3, '2': 5, '3': 3, '4': 1, '65': 1 }
+
+const arr = [
+    {
+        name: 'John',
+        location: 'Los Angeles',
+    },
+    {
+        name: 'Kate',
+        location: 'New York',
+    },
+    {
+        name: 'Mike',
+        location: 'New York',
+    },
+];
+
+let duplicateEleArr = arr.filter((obj, index) => {
+    return arr.findIndex((item) => item.location === obj.location) !== index;
+})
+
+console.log(duplicateEleArr)
