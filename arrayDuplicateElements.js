@@ -45,3 +45,29 @@ let duplicateEleArr = arr.filter((obj, index) => {
 })
 
 console.log(duplicateEleArr)
+
+/* Find the unique element from an array without using any inbuilt function
+input = [-1, -7, -3, -5, -9, -1, -2, -3, -4, -5]
+output = [-1, -7, -3, -5,-9, -2, -4]
+*/
+const input = [-1, -7, -3, -5, -9, -1, -2, -3, -4, -5]
+
+function removeDuplicates(inputArr) {
+    const uniqueArr = [];
+
+    for (let i = 0; i < inputArr.length; i++) {
+        let isDuplicateElement = false;
+        for (let j = 0; j < uniqueArr.length; j++) {
+            if (inputArr[i] == uniqueArr[j]) {
+                isDuplicateElement = true;
+                break;
+            }
+        }
+        if (isDuplicateElement == false) {
+            uniqueArr.push(inputArr[i]);
+        }
+    }
+    return uniqueArr;
+}
+
+console.log(removeDuplicates(input))
